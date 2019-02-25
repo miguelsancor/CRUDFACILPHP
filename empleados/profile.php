@@ -5,11 +5,7 @@ include("conexion.php");
 <html lang="es">
 <head>
 <!--
-Project      : Datos de empleados con PHP, MySQLi y Bootstrap CRUD  (Create, read, Update, Delete) 
-Author		 : Obed Alvarado
-Website		 : http://www.obedalvarado.pw
-Blog         : http://obedalvarado.pw/blog/
-Email	 	 : info@obedalvarado.pw
+
 -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">

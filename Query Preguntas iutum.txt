@@ -1,0 +1,22 @@
+Ventas por perido de tiempo:
+
+Query:
+
+SELECT * 
+FROM ventas 
+WHERE fecha  BETWEEN 
+'2019-02-03' AND '2019-02-22'
+
+Vendedor que tuvo mas ventas
+
+select vendedores.nomvendedores, sum(monto) from ventas,vendedores
+where ventas.idvendedor = vendedores.idvendedores GROUP by  vendedores.nomvendedores
+
+Cuantas ventas hay en cada estado
+select estadoventa.nomestado, ventas.idestadoventa, COUNT(ventas.idventas) from ventas, estadoventa
+where ventas.idestadoventa = estadoventa.idestado GROUP BY estadoventa.nomestado
+
+Cual fue el articulo mas vendido
+
+select ariculo.nomarticulo, sum(monto) from ventas,ariculo
+where ventas.idarticulo = ariculo.idarticulo GROUP by  ariculo.nomarticulo
